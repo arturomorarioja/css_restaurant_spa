@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Restaurant KEA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" data-target="home_page" title="Home page" class="selected">Home</a></li>
+            <li><a href="#" data-target="menu_page" title="Menu page">Menu</a></li>
+            <li><a href="#" data-target="contact_page" title="Contact page">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="page" id="home_page">
+            <section>
+                <img id="home" src="img/kea_restaurant.jpg" alt="KEA Restaurant">
+                <p>
+                    We provide a wide variety of fine dishes and beverages at moderate prices. Located in one of the 
+                    trendiest areas of Copenhagen, Restaurant KEA has been at the forefront of Denmark's culinary life 
+                    for the past decade. Let us take you on a journey of taste that you will never forget. You will not
+                    only not regret it, but you will feel an urge to spread the good news around to your friends and 
+                    family. So amazing is the food experience at Restaurant KEA. We look forward to serving you.
+                </p>
+                <ul>
+                    <li>High quality food</li>
+                    <li>Excellent location</li>
+                    <li>Attentive personnel</li>
+                    <li>Wonderful music</li>
+                    <li>Amazing wines</li>
+                    <li>Reasonable prices</li>
+                </ul>
+            </section>
+            <section>
+                <blockquote>
+                    <p>
+                        Dining at Restaurant KEA has truly been one of the greatest experiences of my life. Words cannot 
+                        express the pleasure that I felt while tasting these amazing flavours. It makes all other 
+                        restaurants pale in comparison, in Denmark and elsewhere.
+                    </p>
+                    <p>-Mette J. Christensen, <em>The Food Connoisseur</em></p>
+                </blockquote>
+            </section>
+        </section>
+        <section class="page hidden" id="menu_page">
+            <article class="dish">
+                <img class="menu" src="img/salad.jpg" alt="Turing Salad">
+                <header>            
+                    <h2>Turing Salad</h2>
+                </header>
+                <p class="menuItem">
+                    Sun-dried tomatos and feta cheese on top of a thin layer of lettuce. Choose between our balsamic,
+                    mustard or barbecue dressing.
+                </p>
+                <p class="price">
+                    75 kr.
+                </p>
+            </article>
+            <article class="dish">
+                <img class="menu" src="img/pizza.jpg" alt="Pizza Berners-Lee">
+                <header>            
+                    <h2>Pizza Berners-Lee</h2>
+                </header>
+                <p class="menuItem">
+                    Tomato, mozzarella, pepperoni and rucula. Choose between our thin or thick bread base.
+                </p>
+                <p class="price">
+                    80 kr.
+                </p>
+            </article>
+            <article class="dish">
+                <img class="menu" src="img/burger.jpg" alt="Codd Burger">
+                <header>            
+                    <h2>Codd Burger</h2>
+                </header>
+                <p class="menuItem">
+                    High quality meat, lettuce, tomato, onion, bacon, cheese, jalape&ntilde;os and a lot of love.
+                    Which sauce do you prefer: BBQ, Dijon or mayonaisse? It comes with French fries and coleslaw salad.
+                </p>
+                <p class="price">
+                    115 kr.
+                </p>
+            </article>
+            <article class="dish">
+                <!-- Original picture: https://www.pexels.com/photo/ice-cream-dessert-on-marble-surface-2161643/ -->
+                <img class="menu" src="img/icecream.jpg" alt="Cerf Cream">
+                <header>            
+                    <h2>Cerf Cream</h2>
+                </header>
+                <p class="menuItem">
+                    Delightful strawberry icecream topped with actual strawberries. In cone or vase. Multiple toppings available.
+                </p>
+                <p class="price">
+                    65 kr.
+                </p>
+            </article>
+        </section>
+        <section class="page hidden" id="contact_page">
+            <section>
+                <img id="contact" src="img/map.jpg" alt="Map">
+                <address>
+                    <p>
+                        <span>Guldbergsgade 29N</span>
+                        <span>2200 Copenhagen</span>
+                    </p>
+                    <p>Phone no.: <a href="tel:20825370" title="Phone Restaurant KEA">20 82 53 70</a></p>
+                    <p>E-mail: <a href="mailto:info@restaurantkea.dk" title="Email Restaurant KEA">info@restaurantkea.dk</a></p>
+                </address>
+            </section>
+            <form action="mailto:info@restaurantkea.dk" method="POST">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <div>
+                        <label for="txtFullName">Full name</label>
+                        <input type="text" id="txtFullName" name="full_name" required pattern="([A-Za-z-]+ )+[A-Za-z-]+">
+                    </div>
+                    <div>
+                        <label for="txtPhoneNo">Phone no.</label>
+                        <input type="tel" id="txtPhoneNo" name="phone_no" required pattern="[0-9]{8}">
+                    </div>
+                    <div>
+                        <label for="txtEmail">E-mail</label>
+                        <input type="email" id="txtEmail" name="email" required>
+                    </div>                    
+                    <div>
+                        <label for="txtPersons">Persons</label>
+                        <input type="number" id="txtPersons" name="persons" value="2" required min="1" max="20">
+                    </div>                    
+                    <div>
+                        <label for="txtDateTime">Date and time</label>
+                        <input type="datetime-local" id="txtDateTime" name="date_and_time" required>
+                    </div>                                        
+                    <div>
+                        <label for="txtInformation">Further information</label><br>
+                        <textarea id="txtInformation" name="further_information"></textarea>
+                    </div>                            
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>            
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2021-2025 KEA Development</p>
+    </footer>
+</body>
+</html>

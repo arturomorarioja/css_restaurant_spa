@@ -1,0 +1,27 @@
+:root {
+    --colorMain: black;
+    --colorHeader: white;
+    --colorList: rgb(177, 62, 54);
+    --colorSelected: rgb(235, 206, 154);
+    --colorPrice: floralwhite;
+    --colorBgHeader: rgb(234, 80, 71);
+    --colorBgNav: rgb(39, 53, 74);
+    --colorBgQuote: lightgrey;
+    --colorBgArticle: lightgoldenrodyellow;
+
+    /* 
+        System fonts grouped from https://modernfontstacks.com/ 
+    */
+
+    /* Neo-Grotesque */
+    --fontMain: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+
+    /* Handwritten */
+    --fontTitle: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+
+    /* Industrial */
+    --fontNav: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+
+    /* Geometric Humanist */
+    --fontList: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+}
