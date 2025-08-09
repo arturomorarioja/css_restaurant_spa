@@ -13,7 +13,7 @@ document.querySelectorAll('nav > ul > li > a').forEach(menuOption => {
         this.classList.add('selected');
         
         // The page title is updated accordingly
-        document.title = `${this.innerText} | Restaurant KEA`;
+        document.title = `${this.innerText} | Restaurant EK`;
         
         // The corresponding page is shown. The rest are hidden
         const dataTarget = this.getAttribute('data-target');        
